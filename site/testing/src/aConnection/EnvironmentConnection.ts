@@ -17,8 +17,8 @@ class EnvironmentConnection {
     const path = this.connectFolder();
     
     this.ENV = process.env.NODE_ENV as string;
-    this.BACKEND_URL = process.env.NODE_MACHINE as string;
-    this.FRONTEND_URL = process.env.NODE_APP as string;
+    this.BACKEND_URL = process.env.BACKEND_URL as string;
+    this.FRONTEND_URL = process.env.FRONTEND_URL as string;
 
     console.log(`Environment connection created successfully at path: "${path}"`);
   }
