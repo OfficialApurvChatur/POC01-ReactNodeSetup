@@ -17,15 +17,15 @@ class EnvironmentConnection {
     this.APP = this.defaultConfig.parsed?.NODE_APP as string;
 
     if (this.MACHINE === "local") {
-      const path = this.connectFolder();
-      
-      this.ENV = process.env.NODE_ENV as string;
-      this.MACHINE = process.env.NODE_MACHINE as string;
-      this.PORT = Number(process.env.PORT) as number;
-      this.APP = process.env.NODE_APP as string;
+      const path = this.connectFolder();      
 
       console.log(`Environment connection created successfully at path: "${path}"`);
     }
+    
+    this.ENV = process.env.NODE_ENV as string;
+    this.MACHINE = process.env.NODE_MACHINE as string;
+    this.PORT = Number(process.env.PORT) as number;
+    this.APP = process.env.NODE_APP as string;
   }
 
   private connectFolder() {
