@@ -1,16 +1,18 @@
+## Servers & DNS
+
 - Frontend
   - Development
-    - Local: [http://localhost:5173](http://localhost:5173)
+    - Local: [http://localhost:9001](http://localhost:9001)
     - Live: []()
 
   - Testing
-    - Local: []()
+    - Local: [http://localhost:9002](http://localhost:9002)
     - Live: []()
 
   - Staging
-    - Local: []()
+    - Local: [http://localhost:9003](http://localhost:9003)
     - Live: []()
 
   - Production
-    - Local: []()
+    - Local: [http://localhost:9004](http://localhost:9004)
     - Live: []()

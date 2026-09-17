@@ -1,16 +1,18 @@
+## Servers & DNS
+
 - Backend
   - Development
     - Local: [http://localhost:8001](http://localhost:8001)
     - Live: []()
 
   - Testing
-    - Local: []()
+    - Local: [http://localhost:8002](http://localhost:8002)
     - Live: []()
 
   - Staging
-    - Local: []()
+    - Local: [http://localhost:8003](http://localhost:8001)
     - Live: []()
 
   - Production
-    - Local: []()
+    - Local: [http://localhost:8004](http://localhost:8001)
     - Live: []()
