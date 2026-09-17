@@ -13,7 +13,7 @@ class EnvironmentConnection {
 
     this.ENV = this.defaultConfig.parsed?.NODE_ENV as string;
     this.MACHINE = this.defaultConfig.parsed?.NODE_MACHINE as string;
-    this.PORT = Number(this.defaultConfig.parsed?.PORT) as number;
+    this.PORT = Number(this.defaultConfig.parsed?.PORT || process.env.PORT || 7999) as number;
     this.APP = this.defaultConfig.parsed?.NODE_APP as string;
 
     if (this.MACHINE === "local") {
