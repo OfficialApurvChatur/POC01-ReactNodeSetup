@@ -2,6 +2,7 @@ ProjectFlow.md
 
 site/backend/dist
 site/backend/node_modules
+site/backend/.env
 
 site/frontend/dist
 site/frontend/node_modules

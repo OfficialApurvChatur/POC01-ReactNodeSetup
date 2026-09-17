@@ -2,7 +2,7 @@
 
 ## System Architecture
 
-1. High Level Design (HLD)
+### 1. High Level Design (HLD)
 ```mermaid
   sequenceDiagram
     actor User
@@ -15,23 +15,51 @@
     Frontend --> User : ui response
 ```
 
-2. Low Level Design (LLD)
+### 2. Low Level Design (LLD)
+
+#### 2.1. Project LLD
 ```mermaid
   flowchart LR
     User(("User"))
-    
-    subgraph Testing["Testing"]
-      subgraph Frontend["Frontend"]
+
+    subgraph Testing["Testing (Playwright)"]
+      subgraph Frontend["Frontend (develop)"]
         React["React"]
       end
 
-      subgraph Backend["Backend"]
+      subgraph Backend["Backend (develop)"]
         Express["Express"]
       end
     end
 
     User --> Frontend
     Frontend --> Backend
+```
+
+#### 2.2. Environment LLD
+```mermaid
+  flowchart LR
+    Site["Frontend / Backend / Testing"]
+  
+    subgraph Environment["Environment"]
+      Project
+      Development["Development"]
+      Testing["Testing"]
+      Staging["Staging"]
+      Production["Production"]
+      Initialize["Initialize"]
+    end
+
+    Site --> Project
+      Project --> Development
+      Project --> Testing
+      Project --> Staging
+      Project --> Production
+      Development --> Initialize
+    Testing --> Initialize
+    Staging --> Initialize
+    Production --> Initialize
+
 ```
 
 ## Servers & DNS
@@ -42,15 +70,15 @@
     - Live: []()
 
   - Testing
-    - Local: []()
+    - Local: [http://localhost:8002](http://localhost:8002)
     - Live: []()
 
   - Staging
-    - Local: []()
+    - Local: [http://localhost:8003](http://localhost:8001)
     - Live: []()
 
   - Production
-    - Local: []()
+    - Local: [http://localhost:8004](http://localhost:8001)
     - Live: []()
 
 - Frontend

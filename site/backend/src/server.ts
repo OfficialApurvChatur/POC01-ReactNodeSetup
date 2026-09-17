@@ -1,12 +1,10 @@
+import "./aConnection/EnvironmentConnection.js"
+import { getEnv } from "./aConnection/EnvironmentConnection.js";
+
 import http from "http";
 import fs from "fs/promises";
 import path from "path";
 
-
-const PORT = process.env.PORT || 8001;
-const ENVIRONMENT = process.env.NODE_ENV || "development";
-const MACHINE = process.env.NODE_MACHINE || "local";
-const APP = process.env.NODE_APP || "POC02-ReactNodeSetup";
 
 const init = () => {
   // Create node connection
@@ -21,9 +19,9 @@ const init = () => {
       );
 
       const returnHTML = indexHTML
-        .replace("{{ NODE_APP }}", APP)
-        .replace("{{ NODE_ENV }}", ENVIRONMENT)
-        .replace("{{ NODE_MACHINE }}", MACHINE);
+        .replace("{{ NODE_APP }}", String(getEnv.PORT))
+        .replace("{{ NODE_ENV }}", getEnv.ENV)
+        .replace("{{ NODE_MACHINE }}", getEnv.MACHINE);
 
       // Response - write head
       response.writeHead(200, {
@@ -63,9 +61,9 @@ const init = () => {
   });
 
   // Listen node connection
-  nodeConnection.listen(PORT, () => {
-    console.log(`Node connection listening on http://localhost:${PORT} at PORT: ${PORT}`)
-    console.log(`(For ${ENVIRONMENT} environment of ${MACHINE} machine)`)
+  nodeConnection.listen(getEnv.PORT, () => {
+    console.log(`Node connection listening on http://localhost:${getEnv.PORT} at PORT: ${getEnv.PORT}`)
+    console.log(`(For ${getEnv.ENV} env of ${getEnv.MACHINE} machine)`)
   })
 };
 
