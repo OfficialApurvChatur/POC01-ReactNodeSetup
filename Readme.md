@@ -67,36 +67,36 @@
 - Backend
   - Development
     - Local: [http://localhost:8001](http://localhost:8001)
-    - Live: []()
+    - Live: [https://react-node-v01-backend-dev.onrender.com](https://react-node-v01-backend-dev.onrender.com)
 
   - Testing
     - Local: [http://localhost:8002](http://localhost:8002)
-    - Live: []()
+    - Live: [https://react-node-v01-backend-test.onrender.com](https://react-node-v01-backend-test.onrender.com)
 
   - Staging
     - Local: [http://localhost:8003](http://localhost:8001)
-    - Live: []()
+    - Live: [https://react-node-v01-backend-stage.onrender.com](https://react-node-v01-backend-stage.onrender.com)
 
   - Production
     - Local: [http://localhost:8004](http://localhost:8001)
-    - Live: []()
+    - Live: [https://react-node-v01-backend-prod.onrender.com](https://react-node-v01-backend-prod.onrender.com)
 
 - Frontend
   - Development
     - Local: [http://localhost:9001](http://localhost:9001)
-    - Live: []()
+    - Live: [https://react-node-v01-frontend-dev.onrender.com](https://react-node-v01-frontend-dev.onrender.com)
 
   - Testing
     - Local: [http://localhost:9002](http://localhost:9002)
-    - Live: []()
+    - Live: [https://react-node-v01-frontend-test.onrender.com](https://react-node-v01-frontend-test.onrender.com)
 
   - Staging
     - Local: [http://localhost:9003](http://localhost:9003)
-    - Live: []()
+    - Live: [https://react-node-v01-frontend-stage.onrender.com](https://react-node-v01-frontend-stage.onrender.com)
 
   - Production
     - Local: [http://localhost:9004](http://localhost:9004)
-    - Live: []()
+    - Live: [https://react-node-v01-frontend-prod.onrender.com](https://react-node-v01-frontend-prod.onrender.com)
 
 - Testing
   - Local Report: [http://localhost:9323/](http://localhost:9323/)
