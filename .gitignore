@@ -13,3 +13,5 @@ site/frontend/env
 site/testing/node_modules
 site/testing/playwright_report
 site/testing/test_result
+site/testing/.env
+site/testing/env
