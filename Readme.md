@@ -36,9 +36,26 @@
 
 ## Servers & DNS
 
+- Backend
+  - Development
+    - Local: [http://localhost:8001](http://localhost:8001)
+    - Live: []()
+
+  - Testing
+    - Local: []()
+    - Live: []()
+
+  - Staging
+    - Local: []()
+    - Live: []()
+
+  - Production
+    - Local: []()
+    - Live: []()
+
 ## Timeline History
 
-1. Sprint #001
+- Sprint #001
   - Started: 17th Sept - 11:00
   - Ended: 
   - Total: 
